@@ -1,9 +1,8 @@
 package com.jcourse.golovin.seminar1.questions;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.util.*;
 
 interface Command {
     void execute();
@@ -24,10 +23,43 @@ class FileParser implements Parser {
     }
 }
 
+
+enum CommandName {
+    PUSH, PLUS, MINUS, DEFINE
+}
+
 class ConsoleParser implements Parser {
     @Override
     public List<Command> getCommands() {
-        return null;
+
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Command> commands = new ArrayList<>();
+        Map<String, Double> variables = new HashMap<>();
+        Stack<Double> stack = new Stack<>();
+
+        while (true) {
+            String s = scanner.nextLine(); //DEFINE a 4
+            if ("exit".equals(s)) {
+                break;
+            }
+
+            String[] arguments = s.split(" "); // [DEFINE, a, 4]
+            CommandName commandName = CommandName.valueOf(
+                    arguments[0].toUpperCase());
+            String[] withoutCommandName =
+                    Arrays.copyOfRange(arguments, 1, arguments.length);
+
+            Command command;
+            switch (commandName) {
+                case DEFINE:
+                    command = new DefineCommand(withoutCommandName, variables);
+                    break;
+                default:
+                    throw new IllegalStateException("Неизвестная комманда");
+            }
+            commands.add(command);
+        }
+        return commands;
     }
 }
 
@@ -72,11 +104,12 @@ public class DefineCommand implements Command {
     @Override
     public void execute() {
         //arguments - [a, 4]
+        //DEFINE a 4
         try {
             double variableValue = Double.parseDouble(arguments[1]);
             String variableName = arguments[0];
             variables.put(variableName, variableValue); //положить элемент в Map
-            variables.get(variableName); // достать элемент из Map
+            Double value = variables.get(variableName);// достать элемент из Map
             stack.push(0.5); //положить элемент
             stack.pop(); //извлечь элемент
             stack.peek(); //посмотреть первый элемент на стеке не извлекая его
@@ -85,3 +118,13 @@ public class DefineCommand implements Command {
         }
     }
 }
+
+
+// 2 + 2 * 3 - не нужно
+// PUSH 2
+// PUSH 2
+// +
+// PRINT
+// POP
+// * - исключение пустой стек
+

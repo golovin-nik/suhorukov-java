@@ -197,7 +197,7 @@ class Rectangle extends Shape {
 //X1 = (-b + sqrt(b*b – 4ac)) / 2a
 //DEFINE a 1
 //DEFINE b -2;
-//DEFINE b 3
+//DEFINE c 3
 //PUSH a
 //PUSH 2
 //* (2a)
@@ -224,3 +224,8 @@ class Rectangle extends Shape {
 // Double b = stack.pop();
 // Double a = stack.pop();
 // return a / b;
+
+// Stack []
+// Map []
+// + (EmptyStackException)
+
