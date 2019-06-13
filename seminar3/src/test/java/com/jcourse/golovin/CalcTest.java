@@ -1,15 +1,20 @@
 package com.jcourse.golovin;
 
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
-import java.io.InputStream;
+import java.io.*;
+import java.nio.charset.Charset;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Stack;
+import java.util.zip.GZIPOutputStream;
 
 public class CalcTest {
 
+    @Rule
+    public ExpectedException thrown =
+            ExpectedException.none();
     private Calc calc;
     private int i = 0;
 
@@ -54,4 +59,33 @@ public class CalcTest {
     static void staticMethod() {
         Class<CalcTest> calcTestClass = CalcTest.class;
     }
+
+    @Test
+    public void thrownNumberFormatException() {
+        thrown.expect(NumberFormatException.class);
+        thrown.expectMessage("");
+
+        double abc = Double.parseDouble("abc");
+
+        //InputStream, OutputStream - работа с байтами
+        //Reader, Writer - работа с символами
+        //InputStreamReader - можно указать кодировку
+        //BufferedReader - они осуществляют чтение в буфер
+        //BufferedWriter - для буферизованного вывода
+
+        try (FileOutputStream fos = new FileOutputStream("file.gz");
+             GZIPOutputStream gzip = new GZIPOutputStream(fos);
+             OutputStreamWriter out = new OutputStreamWriter(gzip, "cp1251");
+             BufferedWriter writer = new BufferedWriter(out)) {
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        logger.info("arguments: {}, {}", 1, "s");
+//        log4j -> slf4j, logback
+    }
 }
+
+//IOC-container @Inject
+//Банда четырех
+//Шаблон проектирования

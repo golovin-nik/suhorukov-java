@@ -26,11 +26,10 @@ class FactoryCommand {
     static Stack<Double> stack = new Stack<>();
 
     static {
-        try {
+        try (InputStream stream = FactoryCommand.class
+                .getClassLoader()
+                .getResourceAsStream("commands.properties")) {
             properties = new Properties();
-            InputStream stream = FactoryCommand.class
-                    .getClassLoader()
-                    .getResourceAsStream("commands.properties");
             properties.load(stream);
             System.out.println("properties = " + properties);
         } catch (IOException e) {
