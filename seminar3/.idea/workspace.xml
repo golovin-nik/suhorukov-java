@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36fb1d2a-00b7-4da6-86b3-4ddd463e4e99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/FactoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/FactoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jcourse/golovin/FactoryCommand$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jcourse/golovin/FactoryCommand$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jcourse/golovin/FactoryCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jcourse/golovin/FactoryCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jcourse/golovin/CalcTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jcourse/golovin/CalcTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="36fb1d2a-00b7-4da6-86b3-4ddd463e4e99" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/FactoryCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="754">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -344,7 +338,7 @@
       <workItem from="1559976980845" duration="5741000" />
       <workItem from="1560427407382" duration="6562000" />
       <workItem from="1560578123795" duration="779000" />
-      <workItem from="1560587610724" duration="291000" />
+      <workItem from="1560587610724" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="Added Seminar 5">
       <created>1560439334579</created>
@@ -389,7 +383,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13373000" />
+    <option name="totallyTimeSpent" value="13458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1282" height="997" extended-state="6" />
@@ -608,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/FactoryCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="754">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

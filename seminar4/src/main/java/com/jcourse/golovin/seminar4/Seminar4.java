@@ -2,6 +2,9 @@ package com.jcourse.golovin.seminar4;
 
 import javafx.util.Pair;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 import java.util.function.Consumer;
 
@@ -128,6 +131,24 @@ public class Seminar4 {
         }
 //        Iterator
 //        Arrays, Collections, Files, Paths,
+
+        try (InputStreamReader reader =
+                     new InputStreamReader(new FileInputStream(""))){
+            while (true) {
+                int read = reader.read();
+                if (read < 0) {
+                    break;
+                }
+                if (Character.isLetterOrDigit(read)) {
+
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.append((char) read);
+                System.out.println(sb.toString());
+            }
+        } catch (IOException e) {
+
+        }
     }
 }
 
