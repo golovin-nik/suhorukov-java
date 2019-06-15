@@ -9,10 +9,15 @@ import java.util.Properties;
 import java.util.Stack;
 
 //1. Создать файл commands.properties (заполнить его командами, имеющимся у вас)
+//DEFINE=com.jcourse.golovin.DefineCommand
+//Properties - класс для работы, load() - загружает содержимое файла
 //2. Привести команды к виду пустой конструктор, метод execute без параметров
 //3. Создать аннотацию Inject + аргумент ArgType
 //4. Пометить поля комманд соответствующими аннотациями
+// @Inject(arg = ArgType.STACK)
+// private Stack<Double> stack;
 //5. Создать фабрику команд, загрузить commands.properties через класс Properties
+//(статический блок инициализации)
 //6. Получить в методе getCommand(String) имя комманды и загрузить класс комманды
 //через Class.forName и properties
 //7. Создать объект класса через метод Class.newInstance();
