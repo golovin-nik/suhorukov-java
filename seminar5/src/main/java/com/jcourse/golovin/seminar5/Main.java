@@ -49,6 +49,8 @@ class WordCount implements Comparable<WordCount> {
 
 public class Main {
     public static void main(String[] args) throws URISyntaxException {
+        System.out.println(String.format("%.5f%%", 77.12345678));
+
         String path1 = Main.class
                 .getClassLoader()
                 .getResource("in.txt")
@@ -61,7 +63,7 @@ public class Main {
         AtomicLong atomicLong = new AtomicLong(0);
         try (Stream<String> lines = Files.lines(path);
              OutputStreamWriter writer = new OutputStreamWriter(
-                     new FileOutputStream(""))) {
+                     new FileOutputStream("out.txt"))) {
             //операция не выполняется, пока не вызовется терминальный метод
 //            Stream<String> filtered = lines.filter(s -> !s.isEmpty());
 //            long count = filtered.count();
@@ -93,6 +95,19 @@ public class Main {
     }
 
     private static void waysToCompareObjects() {
+        Map<String, Integer> map = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            WordCount wordCount =
+                    new WordCount(entry.getKey(), entry.getValue());
+        }
+        WordCount[] wordCountsArray = {
+                new WordCount("abc", 5),
+                new WordCount("cba", 5),
+                new WordCount("hello", 3),
+                new WordCount("good bye", 7)
+        };
+        Arrays.sort(wordCountsArray);
+
         List<WordCount> wordCountList = Arrays.asList(
                 new WordCount("abc", 5),
                 new WordCount("cba", 5),
@@ -127,6 +142,13 @@ public class Main {
         System.out.println("--------------------------------------------");
         Collections.shuffle(wordCountList);
         System.out.println("before sort wordCountList = " + wordCountList);
+
+        Map<String, Integer> anotherMap = new HashMap<>();
+        anotherMap.entrySet().stream()
+                .sorted(Comparator.comparingLong(
+                        Map.Entry<String, Integer>::getValue)
+                        .reversed()
+                        .thenComparing(Map.Entry::getKey));
         Comparator<WordCount> comparator = Comparator
                 .comparingLong(WordCount::getCount)
                 .reversed()
