@@ -9,17 +9,9 @@ class MyClass implements Serializable {
 
 public class Main {
     public static void main(String[] args) {
-        File dir;
-        if (dir.isDirectory()) {
-            File[] filesInDir = dir.listFiles();
-        } else {
-            //иначе null
-        }
+
     }
 
-    String generateIndexHtml(String dir) {
-        
-    }
 
     private static void fastCopy() throws IOException {
         FileInputStream inputStream = new FileInputStream("in.txt");
@@ -28,7 +20,7 @@ public class Main {
     }
 }
 
-public interface ExceptionGenerator {
+interface ExceptionGenerator {
     void generateNullPointerException();
     void generateClassCastException();
     void generateNumberFormatException();
@@ -61,7 +53,7 @@ class ExceptionGeneratorImpl implements ExceptionGenerator {
 
     @Override
     public void generateOutOfMemoryError() {
-
+        int[] longArray = new int[Integer.MAX_VALUE];
     }
 
     @Override
