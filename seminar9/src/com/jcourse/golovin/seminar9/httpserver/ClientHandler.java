@@ -1,4 +1,4 @@
-package com.jcourse.golovin.seminar9;
+package com.jcourse.golovin.seminar9.httpserver;
 
 import javax.activation.MimetypesFileTypeMap;
 import java.io.*;
@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 class ClientHandler implements Runnable {
     private static final String ROOT_DIR = "/home/n1k1t4";

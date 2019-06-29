@@ -1,4 +1,4 @@
-package com.jcourse.golovin.seminar9;
+package com.jcourse.golovin.seminar9.httpserver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
