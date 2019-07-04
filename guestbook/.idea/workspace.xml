@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b445598-cf70-4453-94d4-42d397f710d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBookControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seminar9/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/db/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/db/request.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seminar9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seminar9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/httpserver/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/httpserver/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/IndexHtmlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seminar9/src/com/jcourse/golovin/seminar9/httpserver/IndexHtmlGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/java/com/jcourse/golovin/lab7/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/java/com/jcourse/golovin/lab7/controller/GuestBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/java/com/jcourse/golovin/lab7/model/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/java/com/jcourse/golovin/lab7/service/GuestBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/java/com/jcourse/golovin/lab7/service/GuestBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/src/main/webapp/WEB-INF/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="225">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="39" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,18 +96,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1912" />
-    <option name="height" value="1049" />
+    <option name="width" value="1280" />
+    <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -156,17 +143,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="LombokPluginEnabledInProject" value="true" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java-developer/lab7" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -251,12 +240,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561795182434</updated>
-      <workItem from="1561795188255" duration="1847000" />
+      <workItem from="1561795188255" duration="1966000" />
+      <workItem from="1561981860816" duration="1234000" />
+      <workItem from="1562171712705" duration="1494000" />
+      <workItem from="1562244538847" duration="1484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1847000" />
+    <option name="totallyTimeSpent" value="6178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1282" height="997" extended-state="6" />
@@ -267,9 +259,8 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26062092" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Gradle View" order="2" />
@@ -284,6 +275,7 @@
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Database" order="2" weight="0.32924837" />
@@ -334,22 +326,8 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e5127802-779b-4d29-b135-6a52b30b2101/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guestbook.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/Record.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -371,10 +349,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jcourse/golovin/guestbook/GuestBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="225">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="39" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
